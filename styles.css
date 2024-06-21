@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f4f8;
+    color: #333333;
+}
+
+header {
+    background-color: #4b79a1;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 4px solid #1b3a57;
+}
+
+nav {
+    background-color: #1b3a57;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4b79a1;
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+    background-color: #f2f4f8;
+}
+
+h2 {
+    color: #4b79a1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.company-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.company-card h3 {
+    color: #1b3a57;
+    margin-top: 0;
+}
+
+.company-card p {
+    margin: 0 0 10px;
+}
+
+.extra-info {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.toggle-btn {
+    background-color: #4b79a1;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #1b3a57;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+}
+
